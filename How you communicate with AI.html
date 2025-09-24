@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How you communicate with AI</title>
+</head>
+<body>
+    <h1>How you communicate with AI</h1>
+    <h2>Introduction</h2>
+    <p>In this day and age, many people use AI for school, work, creative endeavors, and research.
+         Despite its widespread use, <br>many people don't know how they actually talk to the AI.
+         In this article, we explore how your prompt is seen by the AI for<br> it to respond to you.
+    </p>
+    <img src="Talking to AI Diagram.jpg" alt="A diagram on how you talk to AI" height="400">
+
+    <h2>Request to talk to AI</h2>
+    <p>This process starts and ends with the user's input. First, you type your prompt for the AI and hit send.</p>
+    <img src="AIprompt.png" alt="A prompt to ChatGPT asking, "How do you bake a cake?" height="200">
+
+    <h2>TCP</h2>
+    <p>When you send your prompt for the AI, the text data is converted into binary code, bits and bytes. 
+        If the binary is too<br> much to send in one piece, then the data is separated into <u>packets</u>, which are groups of data,
+    by the <u>TCP</u> or Transmission <br>Control Protocol.</p>
+    <img src="https://www.fortinet.com/content/dam/fortinet/images/cyberglossary/tcp-ip.jpg" alt="What is TCP?" height="200">
+
+    <h2>Internet Protocol</h2>
+    <p>After your request is broken down by the TCP, two <u>IP addresses</u> are added to it. First, your IP address, so it knows 
+        where <br>to go back to. Secondly, the destintion IP address, which is the AI's servers.
+    </p>
+    <img src="IPaddy.png" alt="the IP address 172.86.79.5309" width="500">
+
+    <h2>Router</h2>
+    <p>Now that your packets have been properly labeled, the Router finds the most <u>heuristic</u>,<br> or efficient, path to
+     get to the destination. Once that has been determined, it sends the packets on their way.</p>
+    <img src="router.png" alt="An image of a router" width="500">
+
+    <h2>The Data Center</h2>
+    <p>The packets arrive at the AI's data center and are reassembled, forming your prompt. The AI processes it and makes a response.</p>
+    <img src="datacenter.png" alt="An image of a datacenter" width="600">
+
+    <h2>The Return</h2>
+    <p>The AI's response is broken down to packets and sent back to you.</p>
+    <img src="packets.png" alt="a graphic of binary code packages">
+
+    <h2>Reciever TCP</h2>
+    <p>The TCP reassembles the broken down packets and checks for errors that may have happened between the transfer.</p>
+    <img src="reas.png" alt="An image of puzzle pieces and a magnifying glass" height="500">
+
+    <h2>The Final Destination</h2>
+    <p>After all the steps are followed, the user is greeted with the response from the AI.</p>
+    <img src="AIresponse.png" alt="The AI's response to a query on how to bake a cake" width="300">)
+
+    <a href="https://www.cloudflare.com/learning/network-layer/how-does-the-internet-work/">Click here for another article.</a>
+</body>
+</html>
